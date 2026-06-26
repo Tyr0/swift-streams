@@ -41,7 +41,12 @@ dependencies: [
 Then add `Streams` to your target:
 
 ```swift
-.target(name: "YourTarget", dependencies: ["Streams"])
+.target(
+    name: "YourTarget",
+    dependencies: [
+        .product(name: "Streams", package: "swift-streams"),
+    ],
+),
 ```
 
 ## Usage
